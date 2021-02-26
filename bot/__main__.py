@@ -83,6 +83,7 @@ def bot_help(update, context):
 
 /{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports
 
+For join #TeamDrive give your mail id & name [Mirror∆Cloud](https://t.me/MirrorClouds)
 '''
     sendMessage(help_string, context.bot, update)
 
