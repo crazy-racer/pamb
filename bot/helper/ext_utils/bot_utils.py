@@ -68,15 +68,15 @@ def getDownloadByGid(gid):
 
 
 def get_progress_bar_string(status):
-    completed = status.processed_bytes() / 6
-    total = status.size_raw() / 6
+    completed = status.processed_bytes() / 8
+    total = status.size_raw() / 8
     if total == 0:
         p = 0
     else:
         p = round(completed * 100 / total)
     p = min(max(p, 0), 100)
-    cFull = p // 6
-    cPart = p % 6 - 1
+    cFull = p // 8
+    cPart = p % 8 - 1
     p_str = '★' * cFull
     if cPart >= 0:
         p_str += PROGRESS_INCOMPLETE[cPart]
